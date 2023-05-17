@@ -24,7 +24,7 @@ export default function App() {
           flexDirection: 'row', flexWrap: 'wrap'
         }} > 
           <MeuBotao/>
-          <MeuBotao/>
+          <MeuBotao texto="Olá"/>
           <MeuBotao/>
           <MeuBotao/>
           <MeuBotao/>

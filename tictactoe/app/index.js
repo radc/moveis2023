@@ -2,6 +2,7 @@ import { View, StyleSheet } from "react-native";
 import { Button } from "react-native";
 import { useNavigation } from "expo-router";
 import Spot from "../components/Spot";
+import Board from "../components/Board";
 
 export default function App() {
 
@@ -11,7 +12,7 @@ export default function App() {
     return (
         <View style={styles.container}>
 
-            <Spot player={0}/>
+            <Board />
 
             <Button title="Click me" 
                 onPress={

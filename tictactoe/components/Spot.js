@@ -27,8 +27,16 @@ export default function Spot(props) {
         estilosSpot.push({borderBottomWidth: 0})
     }
 
+    if(props.hasWinner){
+        estilosSpot.push({backgroundColor: '#22ff77'})
+    }
+    if(props.draw){
+        estilosSpot.push({backgroundColor: '#ffcc00'})
+    }
+
     return (
-        <TouchableOpacity style={estilosSpot}
+        <TouchableOpacity 
+            style={estilosSpot}
             onPress={
                () => props.pressionado(props.l, props.c) 
             }
